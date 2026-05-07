@@ -90,10 +90,10 @@ To evaluate the accuracy of splicing event quantification.
 |-----------------------|---------|-------------|
 | **Correlation (Pearson)** | $$r = \frac{\sum(x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum(x_i - \bar{x})^2} \cdot \sqrt{\sum(y_i - \bar{y})^2}}$$ | Measures the strength of association between predicted and true values. |
 | **Root Mean Squared Error** |  $$\text{RMSE} =\sqrt{\frac{1}{N}\sum_{i=1}^{n}(Y_i - f(x_i))^2}$$ | Measures the average magnitude of the error between predicted values and ground truth. Lower = better.|
-| **Error Rate** |  $ER = &#124;PSI(scRNA) - PSI(bulk)&#124; \times 100$  | Measures the relative deviation of predictions from ground truth. |
+| **Error Rate** |  $ER = &#124;PSI(p) - PSI(g)&#124; \times 100$  | Measures the relative deviation of predictions from ground truth. |
 | **IQR (Interquartile Range)** | $$\text{IQR} = Q_3 - Q_1$$ | Measures the spread of quantification results across replicates or conditions. Lower = more consistent. |
 
-3. Differential Splicing Analysis (DSA)
+## 3. Differential Splicing Analysis (DSA)
 To evaluate the ability to identify statistically significant splicing differences between conditions.
 
 | Metric                | Formula                                                                 | Description                                                                                                 |
@@ -106,7 +106,7 @@ To evaluate the ability to identify statistically significant splicing differenc
 | **Matthews Correlation Coefficient** |$`\text{MCC} = \dfrac{TP \cdot TN - FP \cdot FN}{\sqrt{(TP + FP) \cdot (TP + FN) \cdot (TN + FP) \cdot (TN + FN)}}`$ |Balanced correlation coefficient, robust to class imbalance, ranges from -1 to 1.|
 | **Odds Ratio** |$`\text{OR} = \dfrac{TP \times TN}{FN \times FP}`$|Measures the strength of association between predicted differential events and true differential events.|
 
-4. Utility
+## 4. Utility
 Practical metrics for usability in real-world applications.
 
 |Metric	                |Description                                                              |
